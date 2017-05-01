@@ -119,8 +119,9 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-" set autoindent
-" set cindent
+set autoindent
+set smartindent
+set cindent
 " set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
 " set backspace=indent,eol,start
 

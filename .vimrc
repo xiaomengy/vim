@@ -21,7 +21,6 @@ Plugin 'google/vim-maktaba'
 Plugin 'honza/vim-snippets'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'powerline/powerline'
-Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/syntastic'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
@@ -96,9 +95,6 @@ set laststatus=2
 " highlight settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
-
-" python-mode settings
-let g:pymode_lint_ignore = 'E111'
 
 filetype plugin indent on    " required
 

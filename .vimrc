@@ -108,6 +108,7 @@ set t_ut=
 
 set background=dark
 colorscheme solarized
+hi Normal ctermbg=NONE
 
 set number
 set relativenumber

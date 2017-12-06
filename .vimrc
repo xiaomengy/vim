@@ -40,6 +40,7 @@ call vundle#end()            " required
 call glaive#Install()
 " Optional: Enable codefmt's default mappings on the <Leader>= prefix.
 Glaive codefmt plugin[mappings]
+Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
 
 "---------------------------------------------------------------------------
 "---------------------------------------------------------------------------
@@ -53,6 +54,7 @@ let g:miniBufExplModSelTarget = 1
 
 " codefmt settings
 let g:clang_format_executable = 1
+let g:clang_format#code_style = "google"
 
 " syntastic settings
 set statusline+=%#warningmsg#
@@ -130,7 +132,7 @@ set autoindent
 set smartindent
 set cindent
 " set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
-" set backspace=indent,eol,start
+set backspace=indent,eol,start
 
 set cursorline
 set cursorcolumn

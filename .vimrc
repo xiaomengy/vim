@@ -107,6 +107,8 @@ let g:cpp_concepts_highlight = 1
 
 filetype plugin indent on    " required
 
+let python_highlight_all = 1
+
 syntax enable
 syntax on
 

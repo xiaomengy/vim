@@ -18,11 +18,12 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
 Plugin 'google/vim-maktaba'
+Plugin 'google/vim-searchindex'
 Plugin 'honza/vim-snippets'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'nvie/vim-flake8'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'powerline/powerline'
-Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
@@ -31,6 +32,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/csindent.vim'
 Plugin 'vim-scripts/winmanager'
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -94,9 +96,12 @@ let g:airline_powerline_fonts=1
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
-" highlight settings
+" cpp highlight settings
 let g:cpp_class_scope_highlight = 1
-let g:cpp_experimental_template_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_concepts_highlight = 1
 
 filetype plugin indent on    " required
 
@@ -127,7 +132,7 @@ set cindent
 
 set cursorline
 set cursorcolumn
-set cc=80
+set cc=81
 set incsearch
 set hlsearch
 
@@ -136,4 +141,4 @@ set foldmethod=syntax
 set nofoldenable
 
 " tabwith
-autocmd Filetype python setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+" autocmd Filetype python setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab

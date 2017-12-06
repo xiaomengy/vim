@@ -111,6 +111,8 @@ syntax on
 set t_Co=256
 set t_ut=
 
+let g:solarized_termtrans = 1
+let g:solarized_termcolors = 256
 set background=dark
 colorscheme solarized
 hi Normal ctermbg=NONE

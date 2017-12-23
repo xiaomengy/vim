@@ -19,8 +19,10 @@ Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-searchindex'
+Plugin 'google/yapf'
 Plugin 'honza/vim-snippets'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'lervag/vimtex'
 Plugin 'nvie/vim-flake8'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'powerline/powerline'
@@ -33,6 +35,7 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/csindent.vim'
 Plugin 'vim-scripts/winmanager'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'mhinz/vim-signify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
